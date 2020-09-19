@@ -24,17 +24,10 @@ export class __Blank extends React.Component {
     <View style={this.props.themedStyle.View_1}>
       <Text style={this.props.themedStyle.Text_3}>Sample text content</Text>
       <Button
-        textStyle={{
-          fontSize: 12,
-          color: "#000000",
-          textAlign: "center",
-          fontWeight: "normal",
-          fontStyle: "normal"
-        }}
         style={this.props.themedStyle.Button_5}
         onPress={() => alert("Pressed!")}
       >
-        hey, Tony!
+        Press me!
       </Button>
     </View>
   )
@@ -114,10 +107,9 @@ _Blank = withStyles(__Blank, theme => ({
     paddingBottom: 5,
     overflow: "visible",
     fontSize: 12,
-    color: "#000000",
-    backgroundColor: "#ff7a33",
-    fontStyle: "normal",
-    fontWeight: "normal",
+    color: "#da1616",
+    backgroundColor: "#33ff41",
+    fontFamily: "Montserrat-Regular",
     borderColor: "#000000",
     borderStyle: "solid",
     borderWidth: 0,
