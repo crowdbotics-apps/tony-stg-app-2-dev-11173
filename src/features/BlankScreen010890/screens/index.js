@@ -34,7 +34,7 @@ export class __Blank extends React.Component {
         style={this.props.themedStyle.Button_5}
         onPress={() => alert("Pressed!")}
       >
-        hey!
+        hey, Tony!
       </Button>
     </View>
   )
