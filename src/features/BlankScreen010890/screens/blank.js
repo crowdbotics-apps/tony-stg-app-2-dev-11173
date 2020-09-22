@@ -19,7 +19,11 @@ export class __Blank extends React.Component {
   static navigationOptions = ({ navigation }) => {
     return { headerLeft: <SlideMenuIcon navigationProps={navigation} /> }
   }
-  state = {}
+  state = {
+    Datepicker_11: new Date("09/22/2020"),
+    CheckBox_15: true,
+    Radio_17: true
+  }
   render = () => (
     <View style={this.props.themedStyle.View_1}>
       <Switch
@@ -49,6 +53,43 @@ export class __Blank extends React.Component {
         editable={true}
         multiline={true}
         style={this.props.themedStyle.TextInput_9}
+      />
+      <Datepicker
+        style={this.props.themedStyle.Datepicker_11}
+        date={this.state.Datepicker_11}
+        onSelect={nextValue => this.setState({ Datepicker_11: nextValue })}
+      />
+      <Slider
+        value={50}
+        minimumValue={0}
+        maximumValue={100}
+        step={1}
+        disabled={false}
+        maximumTrackTintColor="#E4E7ED"
+        minimumTrackTintColor="#3366FF"
+        thumbTintColor="#3366FF"
+        style={this.props.themedStyle.Slider_13}
+      />
+      <CheckBox
+        text="Checkbox"
+        disabled={false}
+        style={this.props.themedStyle.CheckBox_15}
+        checked={this.state.CheckBox_15}
+        onChange={nextChecked => this.setState({ CheckBox_15: nextChecked })}
+      />
+      <Radio
+        text="Radio button"
+        disabled={false}
+        style={this.props.themedStyle.Radio_17}
+        checked={this.state.Radio_17}
+        onChange={nextChecked => this.setState({ Radio_17: nextChecked })}
+      />
+      <Icon
+        iconFont="Eva Design Icons"
+        name="star"
+        height={20}
+        width={20}
+        style={this.props.themedStyle.Icon_19}
       />
     </View>
   )
@@ -175,6 +216,7 @@ _Blank = withStyles(__Blank, theme => ({
   },
   TextInput_9: {
     width: "100%",
+    height: 100,
     marginLeft: 0,
     marginRight: 0,
     marginTop: 5,
@@ -197,6 +239,136 @@ _Blank = withStyles(__Blank, theme => ({
     borderTopWidth: 0,
     borderBottomWidth: 0,
     borderRadius: 0,
+    textAlign: "left",
+    textAlignVertical: "center",
+    textDecorationLine: "none",
+    textTransform: "none",
+    lineHeight: 12,
+    letterSpacing: 0
+  },
+  Datepicker_11: {
+    width: "100%",
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 5,
+    marginBottom: 5,
+    paddingLeft: 5,
+    paddingRight: 5,
+    paddingTop: 5,
+    paddingBottom: 5,
+    overflow: "visible",
+    fontSize: 12,
+    color: "#000000",
+    backgroundColor: "#ffffff",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    borderColor: "#000000",
+    borderStyle: "solid",
+    borderWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    borderRadius: 0,
+    textAlign: "left",
+    textAlignVertical: "center",
+    textDecorationLine: "none",
+    textTransform: "none",
+    lineHeight: 12,
+    letterSpacing: 0
+  },
+  Slider_13: {
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 5,
+    marginBottom: 5,
+    paddingLeft: 5,
+    paddingRight: 5,
+    paddingTop: 5,
+    paddingBottom: 5,
+    overflow: "visible",
+    borderColor: "#000000",
+    borderStyle: "solid",
+    borderWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    borderRadius: 0
+  },
+  CheckBox_15: {
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 5,
+    marginBottom: 5,
+    paddingLeft: 5,
+    paddingRight: 5,
+    paddingTop: 5,
+    paddingBottom: 5,
+    overflow: "visible",
+    borderColor: "#000000",
+    borderStyle: "solid",
+    borderWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    borderRadius: 0,
+    textAlign: "left",
+    textAlignVertical: "center",
+    textDecorationLine: "none",
+    textTransform: "none",
+    lineHeight: 12,
+    letterSpacing: 0
+  },
+  Radio_17: {
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 5,
+    marginBottom: 5,
+    paddingLeft: 5,
+    paddingRight: 5,
+    paddingTop: 5,
+    paddingBottom: 5,
+    overflow: "visible",
+    borderColor: "#000000",
+    borderStyle: "solid",
+    borderWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    borderRadius: 0,
+    textAlign: "left",
+    textAlignVertical: "center",
+    textDecorationLine: "none",
+    textTransform: "none",
+    lineHeight: 12,
+    letterSpacing: 0
+  },
+  Icon_19: {
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 5,
+    marginBottom: 5,
+    paddingLeft: 5,
+    paddingRight: 5,
+    paddingTop: 5,
+    paddingBottom: 5,
+    overflow: "visible",
+    borderColor: "#000000",
+    borderStyle: "solid",
+    borderWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    borderRadius: 0,
+    fontSize: 20,
+    color: "#000000",
+    backgroundColor: "#ffffff",
+    fontStyle: "normal",
+    fontWeight: "normal",
     textAlign: "left",
     textAlignVertical: "center",
     textDecorationLine: "none",
