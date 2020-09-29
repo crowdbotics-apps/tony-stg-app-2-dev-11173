@@ -24,7 +24,7 @@ export class __Blank extends React.Component {
     <View style={this.props.themedStyle.View_1}>
       <Icon
         iconFont="FontAwesome Icons"
-        name="fas fa-address-book"
+        name="fab fa-accusoft"
         style={this.props.themedStyle.Icon_3}
       />
       <CheckBox
@@ -45,6 +45,7 @@ export class __Blank extends React.Component {
       />
       <DateTimePicker
         value="09/29/2020"
+        showIcon={false}
         style={this.props.themedStyle.DateTimePicker_9}
       />
       <Slider
@@ -57,6 +58,11 @@ export class __Blank extends React.Component {
         minimumTrackTintColor="#3366FF"
         thumbTintColor="#3366FF"
         style={this.props.themedStyle.Slider_11}
+      />
+      <Icon
+        iconFont="FontAwesome Icons"
+        name="fas fa-address-book"
+        style={this.props.themedStyle.Icon_13}
       />
     </View>
   )
@@ -223,6 +229,36 @@ _Blank = withStyles(__Blank, theme => ({
     borderTopWidth: 0,
     borderBottomWidth: 0,
     borderRadius: 0
+  },
+  Icon_13: {
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 5,
+    marginBottom: 5,
+    paddingLeft: 5,
+    paddingRight: 5,
+    paddingTop: 5,
+    paddingBottom: 5,
+    overflow: "visible",
+    borderColor: "#000000",
+    borderStyle: "solid",
+    borderWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    borderRadius: 0,
+    fontSize: 20,
+    color: "#000000",
+    backgroundColor: "#ffffff",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    textAlign: "left",
+    textAlignVertical: "center",
+    textDecorationLine: "none",
+    textTransform: "none",
+    lineHeight: 12,
+    letterSpacing: 0
   }
 }))
 
